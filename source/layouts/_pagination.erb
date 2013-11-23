@@ -1,0 +1,16 @@
+<div class="pagination">
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+<% if paginate %>
+  <% if next_page %>
+    <div class="prev"><%= link_to 'old pages', next_page %></div>
+  <% end %>
+<% end %>
+  <% if prev_page %>
+    <div class="next"><%= link_to 'new pages', prev_page %></div>
+  <% end %>
+<% end %>
+
+
+</div>

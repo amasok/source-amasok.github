@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>amasok's blog <%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= stylesheet_link_tag "normalize","http://fonts.googleapis.com/css?family=Finger+Paint", "blog", "syntaxhighlight" %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" %>
+  </head>
+  <body class="note" >
+    <%= partial "layouts/header" %>
+    <div class="wrapper">
+    <main>
+      <article class="blog-post">
+        <h1><%= current_article.title %>
+        <span><%= current_article.date.strftime('(%y/%m/%d %H:%M)') %></span></h1>
+      <p>tags:<% current_article.tags.each do |tag, articles| %>
+          <%= link_to tag, tag_path(tag) %>,
+        <% end %></p>
+    <section class="text">
+        <%= yield %>
+    <section>
+      </article>
+      <div class="pagination">
+        <% if current_article.next_article %>
+          <% next_article = current_article.next_article %>
+      <div class="next"><%= link_to next_article.title, next_article.url %>
+    </div>
+    <% end %>
+        <% if current_article.previous_article %>
+          <% prev_article = current_article.previous_article %>
+          <div class="prev"><%= link_to prev_article.title, prev_article.url %></div>
+        <% end %>
+    </div>
+    </main>
+    <aside>
+      <%= partial "layouts/aside" %>
+    </aside>
+  </div>
+    <%= partial "layouts/footer" %>    
+  </body>
+</html>

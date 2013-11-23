@@ -1,0 +1,1 @@
+$('.box').show("normal")

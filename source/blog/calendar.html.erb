@@ -1,0 +1,33 @@
+---
+pageable: true
+layout: layouts/blog
+---
+<h2>Archive for
+  <% case page_type
+     when 'day' %>
+    <%= Date.new(year, month, day).strftime('%b %e %Y') %>
+  <% when 'month' %>
+    <%= Date.new(year, month, 1).strftime('%b %Y') %>
+  <% when 'year' %>
+    <%= year %>
+  <% end %>
+</h2>
+
+  <% page_articles.each_with_index do |article, i| %>
+  <article class="blog-post">
+    <h1><%= link_to article.title, article %> <span><%= article.date.strftime('(%y/%m/%d %H;%M)') %></span></h1>
+    <p>tags:<% article.tags.each do |tag, articles| %>
+    <%= link_to tag, tag_path(tag) %>,
+    <% end %></p>
+    <section class="text">
+    <%= article.body %>
+    </seciton>
+  </article>
+  <% end %>
+<%= partial("layouts/pagination", :locals => { 
+  :paginate => paginate,
+  :num_pages => num_pages,
+  :page_number => page_number,
+  :prev_page => prev_page,
+  :next_page => next_page
+}) %>

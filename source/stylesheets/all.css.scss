@@ -1,0 +1,46 @@
+.wrapper table {
+  margin: 0 auto;  
+}
+
+.note{
+  background-color: #f5f5f5; 
+  background-image: 
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+.font-finger{
+  text-align: center;
+  font-family: 'Finger Paint', cursive;
+}
+
+.mark_box{
+  border:solid 5px #989;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  &:hover{
+    background-color: rgba(0,0,255,0.1);
+  }
+}
+
+.box{
+  width:200px;
+  margin:25px 10px;
+  padding:10px;
+  display:none;
+}
+
+.line1{
+  border-bottom:solid 5px #f0f;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+a{
+  color:#454545;
+  text-decoration:none;
+  border-bottom:solid 5px #A26;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  &:hover{
+    color:#898989;
+  }
+}
