@@ -4,20 +4,17 @@ per_page: 5
 layout: layouts/blog
 ---
 <h2>Articles tagged '<%= tagname %>'</h2>
-
-<ul>
   <% page_articles.each_with_index do |article, i| %>
     <article class="blog-post" >
-    <h1><%= link_to article.title, article %> <span><%= article.date.strftime('(%y/%m/%d %H:%M)') %></span></h1>
-    <p>tags:<% article.tags.each do |tag, articles| %>
+    <h1 class="title"><%= link_to article.title, article %></h1>
+    <span><%= article.date.strftime('%Y/%m/%d %H:%M') %> tags:<% article.tags.each do |tag, articles| %>
     <%= link_to tag, tag_path(tag) %>,
-    <% end %></p>
+  <% end %></span>
     <section class="text">
   <%= article.body %>
     </section>
     </article>
   <% end %>
-</ul>
 <%= partial("layouts/pagination", :locals => { 
   :paginate => paginate,
   :num_pages => num_pages,

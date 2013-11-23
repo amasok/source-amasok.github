@@ -12,11 +12,10 @@
     <div class="wrapper">
     <main>
       <article class="blog-post">
-        <h1><%= current_article.title %>
-        <span><%= current_article.date.strftime('(%y/%m/%d %H:%M)') %></span></h1>
-      <p>tags:<% current_article.tags.each do |tag, articles| %>
+        <h1 class="title"><%= current_article.title %></h1>
+        <span><%= current_article.date.strftime('%Y/%m/%d %H:%M') %> tags:<% current_article.tags.each do |tag, articles| %>
           <%= link_to tag, tag_path(tag) %>,
-        <% end %></p>
+        <% end %></span>
     <section class="text">
         <%= yield %>
     <section>
