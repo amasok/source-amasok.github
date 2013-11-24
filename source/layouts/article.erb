@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <title>amasok's blog <%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= stylesheet_link_tag "normalize","http://fonts.googleapis.com/css?family=Finger+Paint", "blog", "syntaxhighlight" %>
-    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "googleAnalytics" %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" %>
     </head>
   <body class="note" >
     <%= partial "layouts/header" %>
@@ -30,6 +30,7 @@
       <%= partial "layouts/aside" %>
     </aside>
   </div>
-    <%= partial "layouts/footer" %>    
+    <%= partial "layouts/footer" %>
+    <%= javascript_include_tag "tweet", "googleAnalytics", "http://b.st-hatena.com/js/bookmark_button.js" %>
   </body>
 </html>

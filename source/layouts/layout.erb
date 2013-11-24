@@ -9,7 +9,7 @@
     <meta name="keywords" content="<%= data.page.keywords %>">
     <meta name="description" content="<%= data.page.description %>">
     <%= stylesheet_link_tag "normalize","http://fonts.googleapis.com/css?family=Finger+Paint", "all" %>
-    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "googleAnalytics" %>    
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" %>
 </head>
   
   <body class="<%= page_classes %> note font-finger">
@@ -20,6 +20,6 @@
     &copy; Copyright 2013, amasok.
   </div>
 </div>  
-    <%= javascript_include_tag "all" %>
+    <%= javascript_include_tag "all", "googleAnalytics" %>
     </body>
 </html>
