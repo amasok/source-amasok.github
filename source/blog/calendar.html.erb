@@ -12,16 +12,9 @@ layout: layouts/blog
     <%= year %>
   <% end %>
 </h2>
-
   <% page_articles.each_with_index do |article, i| %>
   <article class="blog-post">
-    <h1 class="title><%= link_to article.title, article %></h1>
-    <span><%= article.date.strftime('%Y/%m/%d %H:%M') %> tags:<% article.tags.each do |tag, articles| %>
-    <%= link_to tag, tag_path(tag) %>,
-  <% end %></span>
-    <section class="text">
-    <%= article.body %>
-    </seciton>
+<%= partial("layouts/blogpost", :locals => {:article => article}) %>
   </article>
   <% end %>
 <%= partial("layouts/pagination", :locals => { 
