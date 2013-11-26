@@ -11,7 +11,13 @@ tags: 焼肉, 五反田
 
 #### 場所
 
-七輪焼肉 安安 五反田西口店
+
+<div class="tabelog-info-box">
+<p><a href="http://tabelog.com/tokyo/A1316/A131603/13051901/">七輪焼肉 安安 五反田西口店</a> （<a href="http://tabelog.com/rstLst/yakiniku/">焼肉</a> / <a href="http://tabelog.com/tokyo/A1316/A131603/R4018/rstLst/">五反田駅</a>、<a href="http://tabelog.com/tokyo/A1316/A131603/R1721/rstLst/">大崎広小路駅</a>、<a href="http://tabelog.com/tokyo/A1317/A131710/R8869/rstLst/">不動前駅</a>）
+<br />夜総合点<span style="color: #FFD700;">★★★</span><span style="color: #A9A9A9;">☆☆</span> 3.5
+</p>
+</div>
+
 
 僕が知る中で一位を争う安い焼肉店です。  
 
@@ -26,8 +32,5 @@ tags: 焼肉, 五反田
 もちろんたまたまかもしれませんが。。。  
 他の店舗でいくつか安安にいったことあるのですが、ほぼすべて煙たかったです。  
 日曜の夜だったので、人が少なかったからかもしれません。  
+<a href="#" rel="tabelog 4e6627c420f5c807658d3a5b98b46af1360a04e1"></a>
 
-
-<p><a href="http://tabelog.com/tokyo/A1316/A131603/13051901/" rel="tabelog 4e6627c420f5c807658d3a5b98b46af1360a04e1">七輪焼肉 安安 五反田西口店</a> （<a href="http://tabelog.com/rstLst/yakiniku/">焼肉</a> / <a href="http://tabelog.com/tokyo/A1316/A131603/R4018/rstLst/">五反田駅</a>、<a href="http://tabelog.com/tokyo/A1316/A131603/R1721/rstLst/">大崎広小路駅</a>、<a href="http://tabelog.com/tokyo/A1317/A131710/R8869/rstLst/">不動前駅</a>）
-
-</p>
