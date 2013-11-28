@@ -120,5 +120,6 @@ end
 
 activate :deploy do |deploy|
     deploy.method = :git
+    deploy.remote = "deploy"
     deploy.branch = "master"
 end
