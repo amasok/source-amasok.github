@@ -13,8 +13,13 @@
   </ol>
 
   <h2>By Year</h2>
-  <ol>
-    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-      <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</a></li>
+  <ul>
+    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles_year | %>
+        <li><%= link_to year, blog_year_path(year) %>(<%= articles_year.size %>)</li>
+      <ul>
+      <% blog.articles.group_by {|a| a.date.month }.each do |month, articles_month | %>
+        <li><%= link_to month, blog_month_path(year, month) %> (<%= articles_month.size %>)</li>
+      <% end %>
+      </ul>
     <% end %>
-  </ol>
+  </ul>

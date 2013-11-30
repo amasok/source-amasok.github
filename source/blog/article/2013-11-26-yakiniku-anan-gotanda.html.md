@@ -14,7 +14,7 @@ tags: 焼肉, 五反田
 
 <div class="tabelog-info-box">
 <p><a href="http://tabelog.com/tokyo/A1316/A131603/13051901/">七輪焼肉 安安 五反田西口店</a> （<a href="http://tabelog.com/rstLst/yakiniku/">焼肉</a> / <a href="http://tabelog.com/tokyo/A1316/A131603/R4018/rstLst/">五反田駅</a>、<a href="http://tabelog.com/tokyo/A1316/A131603/R1721/rstLst/">大崎広小路駅</a>、<a href="http://tabelog.com/tokyo/A1317/A131710/R8869/rstLst/">不動前駅</a>）
-<br />夜総合点<span style="color: #FFD700;">★★★</span><span style="color: #A9A9A9;">☆☆</span> 3.5
+<br />夜総合点<span style="color: #FF8C00;">★★★★</span><span style="color: #A9A9A9;">☆</span> 4.0
 </p>
 </div>
 
