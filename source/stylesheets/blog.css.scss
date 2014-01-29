@@ -2,8 +2,17 @@ body {
     font-size: 14px;
     font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
+
+
 a {
+  color: #393939;
   text-decoration: none;
+  &:hover{
+    color: #696969;
+  }
+  &:visited{
+    color: #393939;
+  }
 }
 /* header */
 .note{
@@ -44,6 +53,9 @@ header {
       }
       .text {
         margin-left: 30px;
+        a {
+          text-decoration: underline;
+        }
         blockquote {
           margin: 0;
           padding-left: 20px; 
