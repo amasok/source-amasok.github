@@ -2,16 +2,10 @@
 # Blog settings
 ###
 
- Time.zone = "Tokyo"
+require 'slim'
 
-# Slim settings
-Slim::Engine.set_default_options :pretty => true
-# shortcut
-Slim::Engine.set_default_options :shortcut => {
-  '#' => {:tag => 'div', :attr => 'id'},
-  '.' => {:tag => 'div', :attr => 'class'},
-  '&' => {:tag => 'input', :attr => 'type'}
-}
+Time.zone = "Tokyo"
+
  
  activate :blog do |blog|
   blog.prefix = "blog/article"
