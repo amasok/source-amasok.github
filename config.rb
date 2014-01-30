@@ -4,7 +4,16 @@
 
  Time.zone = "Tokyo"
 
-activate :blog do |blog|
+# Slim settings
+Slim::Engine.set_default_options :pretty => true
+# shortcut
+Slim::Engine.set_default_options :shortcut => {
+  '#' => {:tag => 'div', :attr => 'id'},
+  '.' => {:tag => 'div', :attr => 'class'},
+  '&' => {:tag => 'input', :attr => 'type'}
+}
+ 
+ activate :blog do |blog|
   blog.prefix = "blog/article"
   # blog.permalink = ":year/:month/:day/:title.html"
   # blog.sources = ":year-:month-:day-:title.html"
