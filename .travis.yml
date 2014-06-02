@@ -1,0 +1,24 @@
+---
+language: ruby
+script: bundle exec middleman build
+
+rvm: 2.1.0
+  
+env:
+  global:
+    - GIT_COMMITTER_NAME = "amasok-travis"
+    - GIT_COMMITTER_EMAIL= "amasok23@gmail.com"
+    - GIT_AUTHOR_NAME= "amasok"
+    - GIT_AUTHOR_EMAIL= "amasok23@gmail.com"
+    - secure: "YJ0wnLiC11puyb9Un7Tu3rqoSGs2bUF/9QZPja5OpFSSl78fcFq+9x3mFv7AlsIZ9+q4TyCYrK/M2Pv0nz98tEIGbPW7SzsWYVlkXLdiRFVmaUaOpI3yCOY2y47cQmq3PawKfDbis1Kd/XvLT/rjyDLuukW0slRQ4k4xsP9St94="
+
+before_script:
+  - git clone --quiet https://github.com/amasok/amasok.github.com.git build
+  - pushd build
+  - popd
+
+after_success:
+  - cd build
+  - git add -A
+  - git commit -m 'Update'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/amasok/amasok.github.com.git master 2> /dev/null'
